@@ -17,29 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Url-Gc-RGy">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfC-Vh-juD">
-                                        <rect key="frame" x="319" y="26" width="46" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="mDP-hX-kJR"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="＋"/>
-                                        <connections>
-                                            <action selector="stretchNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2a-Fy-RK3"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="EfC-Vh-juD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Url-Gc-RGy" secondAttribute="leading" constant="20" symbolic="YES" id="SxG-gI-dka"/>
-                                    <constraint firstAttribute="trailing" secondItem="EfC-Vh-juD" secondAttribute="trailing" constant="10" id="Tkm-cb-oh4"/>
-                                    <constraint firstAttribute="height" constant="66" id="W9s-FO-z1m"/>
-                                    <constraint firstItem="EfC-Vh-juD" firstAttribute="top" secondItem="Url-Gc-RGy" secondAttribute="top" constant="26" id="nWm-wc-PbD"/>
-                                </constraints>
-                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cQC-Uh-Anq">
                                 <rect key="frame" x="0.0" y="66" width="375" height="601"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,26 +40,46 @@
                                         <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="IZ7-Q6-5WO"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lLZ-3j-b5v"/>
-                                </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Url-Gc-RGy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfC-Vh-juD">
+                                        <rect key="frame" x="319" y="26" width="46" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="mDP-hX-kJR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="＋"/>
+                                        <connections>
+                                            <action selector="stretchNav:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2a-Fy-RK3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="EfC-Vh-juD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Url-Gc-RGy" secondAttribute="leading" constant="20" symbolic="YES" id="SxG-gI-dka"/>
+                                    <constraint firstAttribute="trailing" secondItem="EfC-Vh-juD" secondAttribute="trailing" constant="10" id="Tkm-cb-oh4"/>
+                                    <constraint firstAttribute="height" constant="66" id="W9s-FO-z1m"/>
+                                    <constraint firstItem="EfC-Vh-juD" firstAttribute="top" secondItem="Url-Gc-RGy" secondAttribute="top" constant="26" id="nWm-wc-PbD"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Url-Gc-RGy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8Ly-cm-zBs"/>
-                            <constraint firstItem="cQC-Uh-Anq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Oni-jN-DfY"/>
                             <constraint firstItem="Url-Gc-RGy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P9n-xe-6St"/>
-                            <constraint firstItem="cQC-Uh-Anq" firstAttribute="top" secondItem="Url-Gc-RGy" secondAttribute="bottom" id="VyK-zY-MXT"/>
-                            <constraint firstItem="cQC-Uh-Anq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hZK-lu-IPL"/>
+                            <constraint firstItem="cQC-Uh-Anq" firstAttribute="top" secondItem="Url-Gc-RGy" secondAttribute="bottom" id="PyS-Z0-IhN"/>
+                            <constraint firstItem="cQC-Uh-Anq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="TOh-se-hwx"/>
+                            <constraint firstItem="cQC-Uh-Anq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="URC-5O-GD5"/>
                             <constraint firstItem="Url-Gc-RGy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hmo-Dw-cxv"/>
-                            <constraint firstItem="cQC-Uh-Anq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wxg-ql-tmW"/>
+                            <constraint firstItem="cQC-Uh-Anq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qtZ-fe-WyT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="navBar" destination="Url-Gc-RGy" id="Q3e-Ar-4Ua"/>
+                        <outlet property="navHeightCon" destination="W9s-FO-z1m" id="IQd-rl-T5j"/>
                         <outlet property="plusButton" destination="EfC-Vh-juD" id="EJ4-fS-Tak"/>
                         <outlet property="tableView" destination="cQC-Uh-Anq" id="BBM-3c-hgE"/>
                     </connections>
